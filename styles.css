@@ -1,0 +1,91 @@
+* {
+font-family: "Varela Round", sans-serif;background-color: #FFFFFF;
+}
+@media (min-width: 480px) {
+#navbar {
+    position: fixed;
+}
+}
+#navbar {
+border-style: solid;
+border-width: 4px;
+border-color: #111111;
+height: 98%;
+position: fixed;
+top: 0;
+left: 0;
+padding: 5px;
+text-align: center;
+color: #111111
+}
+
+#navbar ul{
+overflow: auto;
+height:90%;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 200px;
+}
+#navbar li{
+height:17%;
+padding:0;
+margin:0;
+}
+.nav-link{
+font-size:20px;
+display: block;
+color: #000;
+padding: 10px 16px;
+text-decoration: none;
+}
+li a:hover {
+color: white;
+background-color: #555;
+
+}
+a:link {
+    text-decoration: none;
+}
+main {
+margin-left: 220px;
+padding:2rem;
+color: #000000;
+}
+main header{
+color: #111111;
+font-weight: bold;
+font-size:25px;
+padding:10px autow;
+}
+#Introduction ul,#Introduction li, #Hello_World p,#Variables ul, #Variables li, #Declaring_Variables div p, #Data_Types ul, #Data_Types li, #Data_Types table, #Data_Types tr, #Data_Types th, #Data_Types td, .example{
+background-color:rgb(245,240,240);
+padding-bottom:4px;
+}
+a {
+color: #111111;
+font-weight: bold;
+font-size:15px;
+}
+span{
+color: black;
+font-weight: bold;
+font-size:15px;
+background-color:rgb(245,240,240);
+}
+code {
+font-family: Consolas,"courier new";
+color: crimson;
+background-color: #f1f1f1;
+padding: 2px;
+font-size: 105%;
+}
+#Hello_world header, #Variables header, #Declaring_Variables header, #Data_Types header, #Reference header{
+padding-top:2rem;
+}
+#Introduction li, #Variables li, #Hello_World p, #Declaring_Variables div p, #Data_Types li #Data_Types table, #Data_Types th, #Data_Types td, .example{
+padding: 1rem;
+} 
+#Data_Types th{
+border-bottom:3px dotted black;
+}

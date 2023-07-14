@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>C# Documentation</h1></header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li> <a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.</p>
+        <p>C# is used to develop web apps, desktop apps, mobile apps, games and much more.</p>
+        <p>The first version was released in year 2002. The latest version, C# 11, was released in November 2022.</p>
+        <div>
+          <h4>C# is used for:</h4>
+          <ul>
+            <li>Mobile applications</li>
+            <li>Desktop applications</li>
+            <li>Web applications</li>
+            <li>Web services</li>
+            <li>Web sites</li>
+            <li>Games</li>
+            <li>VR</li>
+            <li>Database applications</li>
+          </ul>
+        </div>
+      </section>
+       <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <h4>We used the following code to print "Hello World" to the screen:</h4>
+         <p>Console.WriteLine("Hello World!"); </p>
+      </section>
+       <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables are containers for storing data values.</p>
+        <h4>In C#, there are different types of variables (defined with different keywords), for example:</h4>
+        <div>
+          <ul>
+            <li><span>int</span> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+            <li><span>double</span> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+            <li><span>char</span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            <li><span>string</span> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+            <li><span>bool</span> - stores values with two states: true or false</li>  
+          </ul>
+        </div>
+      </section>
+       <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables</header>
+        <p>To create a variable, you must specify the type and assign it a value:</p>
+        <div>
+          <h4>Syntax</h4>
+          <p>type variableName = value;</p>
+        </div>
+        <p>Where type is a C# type (such as <code>int</code> or <code>string</code>), and variableName is the name of the variable (such as <span>x</span> or <span>name</span>). The equal sign is used to assign values to the variable.
+        </p>
+        <p>
+        To create a variable that should store text, look at the following example:
+        </p>
+        <div>
+          <h4>Syntax</h4>
+          <p><span>string</span> name = "John"; <br>
+            Console.WriteLine(name);</p>
+        </div>
+      </section>
+       <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>A variable in C# must be a specified data type:</p>
+        <div>
+          <ul>
+            <li><span>int</span> myNum = 15;</li>
+            <li><span>double</span> myDoubleNum = 5.99D;</li>
+            <li><span>char</span> myLetter = 'D';</li>
+            <li><span>bool</span> myBool = true;</li>
+            <li><span>string</span> myText = "Hello";</li>
+          </ul>
+        </div>
+        <table>
+          <tr>
+            <th>Data Type </th>
+            <th>Size</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>int</code></td>
+            <td>4 bytes </td>
+            <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+          </tr>
+          <tr>
+            <td><code>long</code></td>
+            <td>8 bytes </td>
+            <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+          </tr>
+        <tr>
+            <td><code>float</code></td>
+            <td>4 bytes </td>
+            <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+        </td>
+          </tr>
+          <tr>
+            <td><code>double</code></td>
+            <td>8 bytes </td>
+            <td>Stores fractional numbers. Sufficient for storing 15 decimal digits
+        </td>
+          </tr>
+          <tr>
+            <td><code>bool</code></td>
+            <td>1 bit   </td>
+            <td>Stores true or false values</td>
+          </tr>
+          <tr>
+            <td><code>char</code></td>
+            <td>2 bytes </td>
+            <td>Stores a single character/letter, surrounded by single quotes</td>
+          </tr>
+          <tr>
+            <td><code>string</code></td>
+            <td>2 bytes per character </td>
+            <td>Stores a sequence of characters, surrounded by double quotes</td>
+          </tr>
+        </table>
+        <div>
+            <h3>Numbers</h3>
+            <p>Number types are divided into two groups:</p>
+            <p><span>Integer types</span> stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are int and long. Which type you should use, depends on the numeric value.</p>
+            <p><span>Floating point types</span> represents numbers with a fractional part, containing one or more decimals. Valid types are float and double.</p>    
+        </div>
+        <div>
+            <h3>Integer Types</h3>
+            <div>
+                <h4>Int</h4>
+                <p>The <code>int</code> data type can store whole numbers from -2147483648 to 2147483647. In general, and in our tutorial, the int data type is the preferred data type when we create variables with a numeric value.</p>
+                <div><p class="example"><span>int</span> myNum = 100000;</p></div>    
+            </div>
+            <div>
+                <h4>Long</h4>
+                <p>The <code>long</code> data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when <code>int</code> is not large enough to store the value. Note that you should end the value with an "L":</p>
+               <div><p class="example"><span>long</span> myNum = 15000000000L;</p></div>    
+            </div>
+            <div>
+                <h4>Floating Point Types</h4>
+                <p>You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.</p>
+                <p>The <code>float</code> and <code>double</code> data types can store fractional numbers. Note that you should end the value with an "F" for <code>float</code> and "D" for <code>double</code>:</p>
+                <div><p class="example"><span>float</span> myNum = 5.75F;</p>
+                <p class="example"><span>double</span> myNum = 19.99D;</p></div>    
+            </div>
+            <div>
+                <h4>Scientific Numbers</h4>
+                <p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+                <div><p class="example"><span>float</span> f1 = 35e3F;</p>
+                <p class="example"><span>double</span> d1 = 12E4D;</p></div>    
+            </div>
+            <div>
+                <h4>Booleans</h4>
+                <p>A <code>boolean</code> data type is declared with the bool keyword and can only take the values true or false:</p>
+                <div><p class="example"><span>boolean</span> isCSharpFun = true;</p>
+                <p class="example"><span>boolean</span> isFishTasty = false;</p></div>    
+            </div>
+            <div>
+                <h4>Characters</h4>
+                <p>The <code>char</code> data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+                <div><p class="example"><span>char</span> myGrade = 'B';</p>
+                <p class="example"><span>char</span> slope = 'X';</p></div>    
+            </div>
+            <div>
+                <h4>Strings</h4>
+                <p>The <code>string</code> data type is used to store a sequence of characters (text). <code>String</code> values must be surrounded by double quotes:</p>
+                <div><p class="example"><span>string</span> greeting = "Hello World";</p>
+                <p class="example"><span>string</span> phrase = "Get to the chopper!";</p></div>    
+            </div>
+        </div>
+      </section>
+       <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/cs/index.php" alt="W3 Schools C# home page">W3 Schools</a>.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
